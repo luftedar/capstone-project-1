@@ -15,8 +15,8 @@
   align-items: center;
 }
 
-.m-0-1 {
-  margin: 0 1rem;
+nav {
+  padding: 1.5rem;
 }
 
 #mobile-nav {
@@ -122,4 +122,27 @@
 
 .show-menu2 {
   transform: translateX(0);
+}
+
+header {
+  padding: 5rem 1rem 5rem 1rem;
+  color: #ec5242;
+  font-size: 1.5rem;
+}
+
+header h5 {
+  border: 3px #f9f9f9 solid;
+  color: #272a31;
+  padding: 1.5rem;
+  font-weight: lighter;
+}
+
+header h2 {
+  color: #272a31;
+  margin: 1.2rem 0 0.5rem 0;
+}
+
+header h3 {
+  color: #272a31;
+  font-size: 1.3rem;
 }
