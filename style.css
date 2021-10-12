@@ -244,6 +244,7 @@ header h3 {
   flex: 2;
   color: #ec5242;
   flex-shrink: 1;
+  margin-left: 0.5rem;
 }
 
 .card-program p {
@@ -266,23 +267,26 @@ footer .underline {
 }
 
 .card-speaker {
-  padding: 2rem;
   transition: transform 1s ease-in-out;
   position: relative;
+  max-width: 60%;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
 }
 
 .speaker-image {
   max-width: 150px;
   max-height: 150px;
-  margin-right: 4rem;
+  margin-right: 1rem;
 }
 
 .card-speaker::before {
   content: '';
   position: absolute;
   background: url('img/SpeakerBG4.jpg') no-repeat;
-  top: 20px;
-  left: 20px;
+  top: 0;
+  left: 0;
   right: 0;
   bottom: 0;
   background-size: 100px 80px;
