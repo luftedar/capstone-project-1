@@ -267,17 +267,23 @@ header h3 {
 }
 
 #see-more {
-  transform: translateY(-1800%);
+  transform: translateY(-50%);
   transition: transform 1s ease-in-out;
   padding: 1.2rem;
   margin: 0 auto;
   width: 90%;
 }
 
+#see-more span {
+  margin-left: 1rem;
+  color: #ec5242;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
 footer {
   background: #272a31;
   padding: 2rem;
-  transform: translateY(-190%);
   transition: transform 1s ease-out;
 }
 
@@ -289,4 +295,8 @@ footer {
 
 footer .underline {
   margin: 1rem auto;
+}
+
+.p-fixed {
+  position: fixed;
 }

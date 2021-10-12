@@ -77,17 +77,16 @@ const footer = document.querySelector('footer');
 
 seeMoreButton.addEventListener('click', () => {
   for (let i = 0; i < moreSpeakers.length; i += 1) {
-    if (moreSpeakers[i].classList[3] === 'hide-menu2') {
+    if (moreSpeakers[i].classList[moreSpeakers.length] === 'hide-menu2') {
+      moreSpeakers[i].classList.remove('p-fixed')
       moreSpeakers[i].classList.remove('hide-menu2');
       moreSpeakers[i].classList.add('show-menu2');
       seeMoreButton.style.transform = 'translateY(0)';
-      footer.style.transform = 'translateY(0)';
     } else {
+      moreSpeakers[i].classList.add('p-fixed');
       moreSpeakers[i].classList.add('hide-menu2');
       moreSpeakers[i].classList.remove('show-menu2');
-      seeMoreButton.style.transform = 'translateY(-1800%)';
-      footer.style.transform = 'translateY(-180%)';
-      document.body.style.height = '1000px';
+      seeMoreButton.style.transform = 'translateY(-50%)';
     }
   }
 });
