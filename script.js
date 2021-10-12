@@ -52,7 +52,7 @@ const speakerArray = [
   },
   {
     image: 'img/ArikanSirakaya.jpeg',
-    name: 'Arıkan Sırakaya',
+    name: 'Arikan Sırakaya',
     resume: 'Resume',
     description: 'Drummer of bla bla',
   },
@@ -81,10 +81,12 @@ seeMoreButton.addEventListener('click', () => {
       moreSpeakers[i].classList.remove('hide-menu2');
       moreSpeakers[i].classList.add('show-menu2');
       seeMoreButton.style.transform = 'translateY(0)';
+      footer.style.transform = 'translateY(0)';
     } else {
       moreSpeakers[i].classList.add('hide-menu2');
       moreSpeakers[i].classList.remove('show-menu2');
       seeMoreButton.style.transform = 'translateY(-1800%)';
+      footer.style.transform = 'translateY(-180%)'
     }
   }
 });

@@ -276,4 +276,17 @@ header h3 {
 
 footer {
   background: #272a31;
+  padding: 2rem;
+  transform: translateY(-190%);
+  transition: transform 1s ease-out;
+}
+
+#img-div > * {
+  max-width: 150px;
+  min-width: 150px;
+  background: #272a31;
+}
+
+footer .underline {
+  margin: 1rem auto;
 }
