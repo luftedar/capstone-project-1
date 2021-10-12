@@ -287,10 +287,20 @@ footer {
   transition: transform 1s ease-out;
 }
 
+#img-div {
+  flex-wrap: wrap;
+}
+
 #img-div > * {
   max-width: 150px;
   min-width: 150px;
   background: #272a31;
+  flex-basis: 50%;
+  margin: 1.5rem;
+}
+
+#img-div img:nth-child(7) {
+  margin: 0 auto;
 }
 
 footer .underline {
