@@ -51,6 +51,7 @@ nav {
   width: 40vw;
   background: #d3d3d3 no-repeat fixed left 50% bottom;
   opacity: 1;
+  z-index: 3;
 }
 
 #mobile-nav li {
