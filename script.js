@@ -41,31 +41,31 @@ let speakerArray = [
   },
   {
     image: 'img/CengizTural.jpg',
-    name: 'Cengiz Tural',
+    name: 'Volkan Öktem',
     resume: 'Resume',
     description: 'Drummer of bla bla'
   },
   {
     image: 'img/CengizTural.jpg',
-    name: 'Cengiz Tural',
+    name: 'Mert Işılay',
     resume: 'Resume',
     description: 'Drummer of bla bla'
   },
   {
     image: 'img/CengizTural.jpg',
-    name: 'Cengiz Tural',
+    name: 'Arıkan Sırakaya',
     resume: 'Resume',
     description: 'Drummer of bla bla'
   },
   {
     image: 'img/CengizTural.jpg',
-    name: 'Cengiz Tural',
+    name: 'Burak Gürpınar',
     resume: 'Resume',
     description: 'Drummer of bla bla'
   },
   {
     image: 'img/AlenKonakoglu.jpg',
-    name: 'Deneme',
+    name: 'Alen Konakoğlu',
     resume: 'Resume',
     description: 'Drummer of bla bla'
   }
@@ -74,16 +74,31 @@ let speakerArray = [
 const seeMoreButton = document.querySelector('#see-more');
 const cardSpeakers = [...document.querySelectorAll('.card-speaker')];
 const moreSpeakers = cardSpeakers.splice(2,cardSpeakers.length);
-console.log(moreSpeakers[0].classList);
 
 seeMoreButton.addEventListener('click', () => {
   for(let i = 0; i < moreSpeakers.length;i+=1){
-    if(moreSpeakers[i].classList[1] === 'd-none') {
-      moreSpeakers[i].classList.remove('d-none');
-      moreSpeakers[i].classList.add('d-flex');
+    if(moreSpeakers[i].classList[3] === 'hide-menu2') {
+      moreSpeakers[i].classList.remove('hide-menu2');
+      moreSpeakers[i].classList.add('show-menu2');
+      seeMoreButton.style.transform = 'translateY(0)'
     }else {
-      moreSpeakers[i].classList.add('d-none');
-      moreSpeakers[i].classList.remove('d-flex');
+      moreSpeakers[i].classList.add('hide-menu2');
+      moreSpeakers[i].classList.remove('show-menu2');
+      seeMoreButton.style.transform = 'translateY(-4800%)'
     }
+  }
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  for ( let i = 0; i < speakerArray.length ; i += 1) {
+    const speakerImage = document.querySelector('.speaker-image');
+    const speakerName = document.querySelector('.speaker-name');
+    const speakerResume = document.querySelector('.speaker-resume');
+    const speakerDescription = dcoument.querySelector('.speaker-description');
+
+    speakerImage.src = speakerArray[i].image;
+    speakerName.textContent = speakerArray[i].name;
+    speakerResume.textContent = speakerArray[i].resume;
+    speakerDescription.textContent = speakerArray[i].description;
   }
 });
