@@ -347,6 +347,7 @@ footer .underline {
 }
 
 footer {
+  margin-top: 2rem;
   background: #272a31;
   padding: 2rem;
   transition: transform 1s ease-out;
