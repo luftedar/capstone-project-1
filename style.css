@@ -199,3 +199,27 @@ header h3 {
   color: #f9f9f9;
   flex-shrink: 4;
 }
+
+.card-speaker {
+  margin: 1rem;
+}
+
+.speaker-image {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.speaker-image::after {
+  content: '';
+  width: 500px;
+  height: 500px;
+  background-color: cyan;
+  transform: translateX(-100px);
+}
+
+#featured-speakers {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
