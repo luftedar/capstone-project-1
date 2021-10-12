@@ -40,25 +40,25 @@ let speakerArray = [
     description: 'Drummer of bla bla'
   },
   {
-    image: 'img/CengizTural.jpg',
+    image: 'img/VolkanOktem.jpg',
     name: 'Volkan Öktem',
     resume: 'Resume',
     description: 'Drummer of bla bla'
   },
   {
-    image: 'img/CengizTural.jpg',
+    image: 'img/MertIsilay.jpg',
     name: 'Mert Işılay',
     resume: 'Resume',
     description: 'Drummer of bla bla'
   },
   {
-    image: 'img/CengizTural.jpg',
+    image: 'img/ArikanSirakaya.jpeg',
     name: 'Arıkan Sırakaya',
     resume: 'Resume',
     description: 'Drummer of bla bla'
   },
   {
-    image: 'img/CengizTural.jpg',
+    image: 'img/BurakGurpinar.jpg',
     name: 'Burak Gürpınar',
     resume: 'Resume',
     description: 'Drummer of bla bla'
@@ -66,7 +66,7 @@ let speakerArray = [
   {
     image: 'img/AlenKonakoglu.jpg',
     name: 'Alen Konakoğlu',
-    resume: 'Resume',
+    resume: 'Bune',
     description: 'Drummer of bla bla'
   }
 ]
@@ -89,16 +89,18 @@ seeMoreButton.addEventListener('click', () => {
   }
 });
 
-window.addEventListener('DOMContentLoaded', () => {
-  for ( let i = 0; i < speakerArray.length ; i += 1) {
-    const speakerImage = document.querySelector('.speaker-image');
-    const speakerName = document.querySelector('.speaker-name');
-    const speakerResume = document.querySelector('.speaker-resume');
-    const speakerDescription = dcoument.querySelector('.speaker-description');
 
-    speakerImage.src = speakerArray[i].image;
-    speakerName.textContent = speakerArray[i].name;
-    speakerResume.textContent = speakerArray[i].resume;
-    speakerDescription.textContent = speakerArray[i].description;
-  }
-});
+for ( let i = 0; i < speakerArray.length ; i += 1) {
+  window.addEventListener('DOMContentLoaded', () => {
+    const speakerImage = document.getElementsByClassName('speaker-image');
+    const speakerName = document.getElementsByClassName('speaker-name');
+    const speakerResume = document.getElementsByClassName('speaker-resume');
+    const speakerDescription = document.getElementsByClassName('speaker-description');
+
+    console.log(speakerImage);
+    speakerImage[i].src = speakerArray[i].image;
+    speakerName[i].textContent = speakerArray[i].name;
+    speakerResume[i].textContent = speakerArray[i].resume;
+    speakerDescription[i].textContent = speakerArray[i].description;
+  });
+}
