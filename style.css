@@ -150,7 +150,17 @@ header::before {
   position: absolute;
   z-index: -1;
   height: 98vh;
-  opacity: 0.4;
+  opacity: 0.3;
+}
+
+hgroup h1 {
+  background-image: url('img/MobileMenuBG.jpg');
+  font-weight: 900;
+  background-size: cover;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: #ec5242;
+  -webkit-text-fill-color: transparent;
 }
 
 header h5 {
