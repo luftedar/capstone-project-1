@@ -201,12 +201,17 @@ header h3 {
 }
 
 .card-speaker {
-  margin: 1rem;
+  margin: 2rem 0 1rem 0;
+  padding: 2rem;
+  background: url('img/speakerbackground.png') top left no-repeat;
+  background-blend-mode: lighten;
+  background-size: 25%;
 }
 
 .speaker-image {
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 150px;
+  max-height: 150px;
+  margin-right: 4rem;
 }
 
 .speaker-image::after {
@@ -222,4 +227,20 @@ header h3 {
   justify-items: center;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
+}
+
+.speaker-resume {
+  color: #ec5242;
+  font-style: italic;
+}
+
+.speaker-line {
+  width: 30px;
+  height: 2px;
+  background-color: #d3d3d3;
+  margin: 0.5rem 0;
+}
+
+.speaker-description {
+  color: #272a31;
 }
