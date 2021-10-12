@@ -83,13 +83,13 @@ seeMoreButton.addEventListener('click', () => {
       moreSpeakers[i].classList.remove('hide-menu2');
       moreSpeakers[i].classList.add('show-menu2');
       seeMoreButton.style.transform = 'translateY(0)';
-      seeMoreButton.innerHTML = 'Less<span>&UpArrow;</span>'
+      seeMoreButton.innerHTML = 'LESS<span>&UpArrow;</span>'
     } else {
       moreSpeakers[i].classList.add('p-fixed');
       moreSpeakers[i].classList.add('hide-menu2');
       moreSpeakers[i].classList.remove('show-menu2');
-      seeMoreButton.style.transform = 'translateY(-50%)';
-      seeMoreButton.innerHTML = 'More<span>&DownArrow;</span>'
+      seeMoreButton.style.transform = 'translateY(-10%)';
+      seeMoreButton.innerHTML = 'MORE<span>&DownArrow;</span>'
     }
   }
 });

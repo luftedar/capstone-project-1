@@ -328,11 +328,15 @@ footer .underline {
 }
 
 #see-more {
-  transform: translateY(-50%);
+  transform: translateY(-10%);
   transition: transform 1s ease-in-out;
   padding: 1.2rem;
   margin: 0 auto;
   width: 90%;
+  background-color: white;
+  border: 1px solid #d3d3d3;
+  font-weight: 500;
+  letter-spacing: 1.5px;
 }
 
 #see-more span {
