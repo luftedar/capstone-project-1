@@ -190,28 +190,47 @@ header h3 {
 #main-program h2 {
   color: #f9f9f9;
   padding: 1.5rem 0 0.5rem 0;
+  margin: 1.5rem 0 0.3rem 0;
+  font-weight: 700;
 }
 
 .underline {
-  margin: auto 0;
+  margin: 0 auto;
   height: 1px;
   width: 40px;
   background-color: #ec5242;
 }
 
+#program-cards {
+  margin-top: 1.6rem;
+}
+
 .card-program {
-  border: 1px #f9f9f9 solid;
   padding: 2rem;
-  margin: 1rem 1.5rem;
+  margin: 0.3rem 1.5rem;
+  position: relative;
+}
+
+.card-program::before {
+  content: '';
+  background: url("img/cardProgramBG.png") no-repeat;
+  background-size: cover;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
 }
 
 #join-button {
   background-color: #ec5242;
-  margin: 0 auto;
+  margin: 3rem auto;
   width: 60%;
   padding: 2rem;
   color: #f9f9f9;
   text-decoration: none;
+  font-weight: 700;
 }
 
 .card-program i {
