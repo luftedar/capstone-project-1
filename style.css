@@ -139,6 +139,20 @@ header {
   font-size: 1.5rem;
 }
 
+header::before {
+  content: '';
+  background: url('img/MobileHeaderBG.jpg') no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  height: 98vh;
+  opacity: 0.4;
+}
+
 header h5 {
   border: 3px #f9f9f9 solid;
   color: #272a31;
