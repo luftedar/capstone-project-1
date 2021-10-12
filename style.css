@@ -164,20 +164,23 @@ hgroup h1 {
 }
 
 header h5 {
-  border: 3px #f9f9f9 solid;
+  margin-top: 2.5rem;
+  border: 2px #f9f9f9 solid;
   color: #272a31;
-  padding: 1.5rem;
-  font-weight: lighter;
+  padding: 1.3rem;
+  font-weight: 300;
 }
 
 header h2 {
   color: #272a31;
   margin: 1.2rem 0 0.5rem 0;
+  font-weight: 900;
 }
 
 header h3 {
   color: #272a31;
   font-size: 1.3rem;
+  font-weight: 500;
 }
 
 #main-program {
