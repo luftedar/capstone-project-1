@@ -73,6 +73,7 @@ const speakerArray = [
 const seeMoreButton = document.querySelector('#see-more');
 const cardSpeakers = [...document.querySelectorAll('.card-speaker')];
 const moreSpeakers = cardSpeakers.splice(2, cardSpeakers.length);
+const footer = document.querySelector('footer');
 
 seeMoreButton.addEventListener('click', () => {
   for (let i = 0; i < moreSpeakers.length; i += 1) {
@@ -83,7 +84,7 @@ seeMoreButton.addEventListener('click', () => {
     } else {
       moreSpeakers[i].classList.add('hide-menu2');
       moreSpeakers[i].classList.remove('show-menu2');
-      seeMoreButton.style.transform = 'translateY(-4800%)';
+      seeMoreButton.style.transform = 'translateY(-1800%)';
     }
   }
 });
