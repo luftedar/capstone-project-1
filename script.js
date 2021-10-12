@@ -86,7 +86,8 @@ seeMoreButton.addEventListener('click', () => {
       moreSpeakers[i].classList.add('hide-menu2');
       moreSpeakers[i].classList.remove('show-menu2');
       seeMoreButton.style.transform = 'translateY(-1800%)';
-      footer.style.transform = 'translateY(-180%)'
+      footer.style.transform = 'translateY(-180%)';
+      document.body.style.height = '1000px';
     }
   }
 });
