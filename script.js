@@ -31,3 +31,59 @@ mobileMenuLink.forEach((menuItem) => {
 mobileMenuButton.addEventListener('click', toggleMenu);
 
 mobileMenuButton.addEventListener('click', hamburgerAnimation);
+
+let speakerArray = [
+  {
+    image: 'img/CengizTural.jpg',
+    name: 'Cengiz Tural',
+    resume: 'Resume',
+    description: 'Drummer of bla bla'
+  },
+  {
+    image: 'img/CengizTural.jpg',
+    name: 'Cengiz Tural',
+    resume: 'Resume',
+    description: 'Drummer of bla bla'
+  },
+  {
+    image: 'img/CengizTural.jpg',
+    name: 'Cengiz Tural',
+    resume: 'Resume',
+    description: 'Drummer of bla bla'
+  },
+  {
+    image: 'img/CengizTural.jpg',
+    name: 'Cengiz Tural',
+    resume: 'Resume',
+    description: 'Drummer of bla bla'
+  },
+  {
+    image: 'img/CengizTural.jpg',
+    name: 'Cengiz Tural',
+    resume: 'Resume',
+    description: 'Drummer of bla bla'
+  },
+  {
+    image: 'img/AlenKonakoglu.jpg',
+    name: 'Deneme',
+    resume: 'Resume',
+    description: 'Drummer of bla bla'
+  }
+]
+
+const seeMoreButton = document.querySelector('#see-more');
+const cardSpeakers = [...document.querySelectorAll('.card-speaker')];
+const moreSpeakers = cardSpeakers.splice(2,cardSpeakers.length);
+console.log(moreSpeakers[0].classList);
+
+seeMoreButton.addEventListener('click', () => {
+  for(let i = 0; i < moreSpeakers.length;i+=1){
+    if(moreSpeakers[i].classList[1] === 'd-none') {
+      moreSpeakers[i].classList.remove('d-none');
+      moreSpeakers[i].classList.add('d-flex');
+    }else {
+      moreSpeakers[i].classList.add('d-none');
+      moreSpeakers[i].classList.remove('d-flex');
+    }
+  }
+});
