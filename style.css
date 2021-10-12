@@ -256,6 +256,10 @@ header h3 {
   font-weight: 700;
 }
 
+footer .underline {
+  margin: 1rem auto;
+}
+
 #featured-speakers .underline {
   margin-bottom: 2.5rem;
 }
@@ -358,10 +362,6 @@ footer {
 
 #img-div img:nth-child(7) {
   margin: 0 auto;
-}
-
-footer .underline {
-  margin: 1rem auto;
 }
 
 .p-fixed {
