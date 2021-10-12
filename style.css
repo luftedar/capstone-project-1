@@ -256,8 +256,11 @@ header h3 {
   font-weight: 700;
 }
 
+#featured-speakers .underline {
+  margin-bottom: 2.5rem;
+}
+
 .card-speaker {
-  margin: 2rem 0 1rem 0;
   padding: 2rem;
   transition: transform 1s ease-in-out;
   position: relative;
