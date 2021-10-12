@@ -251,13 +251,16 @@ header h3 {
   flex-shrink: 4;
 }
 
+#featured-speakers h2 {
+  margin: 2rem 0 0.5rem 0;
+  font-weight: 700;
+}
+
 .card-speaker {
   margin: 2rem 0 1rem 0;
   padding: 2rem;
-  background: url('img/speakerbackground.png') top left no-repeat;
-  background-blend-mode: lighten;
-  background-size: 25%;
   transition: transform 1s ease-in-out;
+  position: relative;
 }
 
 .speaker-image {
@@ -266,12 +269,16 @@ header h3 {
   margin-right: 4rem;
 }
 
-.speaker-image::after {
+.card-speaker::before {
   content: '';
-  width: 500px;
-  height: 500px;
-  background-color: cyan;
-  transform: translateX(-100px);
+  position: absolute;
+  background: url('img/SpeakerBG4.jpg') no-repeat;
+  top: 20px;
+  left: 20px;
+  right: 0;
+  bottom: 0;
+  background-size: 100px 80px;
+  z-index: -1;
 }
 
 #featured-speakers {
