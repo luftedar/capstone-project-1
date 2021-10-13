@@ -40,6 +40,21 @@ nav {
   font-weight: 700;
 }
 
+.past-box img {
+  width: 100%;
+  height: 250px;
+  top: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+#logo-section img {
+  border: 1px solid #d3d3d3;
+  padding: 4rem;
+  flex-grow: 1;
+}
+
 #mobile-nav {
   position: fixed;
   transition: transform 1s ease-in-out;
@@ -162,7 +177,7 @@ header::before {
   right: 0;
   position: absolute;
   z-index: -1;
-  height: 98vh;
+  height: 1050px;
   opacity: 0.3;
   box-sizing: border-box;
 }
@@ -390,4 +405,63 @@ footer {
 
 .p-fixed {
   position: fixed;
+}
+
+#logo-section {
+  background: #f9f9f9;
+  padding: 2rem;
+}
+
+#logo-section h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 1rem 0 0.5rem 0;
+  flex-grow: 2;
+}
+
+#logo-section .underline {
+  margin-bottom: 0.5rem;
+}
+
+#logo-section p {
+  font-weight: 300;
+  margin-bottom: 2rem;
+  flex-grow: 2;
+}
+
+.past-box {
+  position: relative;
+  color: #f9f9f9;
+  width: 80%;
+  margin: 0 auto;
+  height: 250px;
+  font-size: 1.2rem;
+}
+
+#past-box-1 {
+  margin-bottom: 1rem;
+}
+
+#past-sections {
+  padding: 1rem;
+}
+
+#past-sections .underline {
+  margin-bottom: 1rem;
+}
+
+#past-sections h2 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+#past-sections p {
+  margin: 0 2rem 3rem 2rem;
+  font-weight: 400;
+}
+
+.past-box-desc {
+  position: absolute;
+  top: 35%;
+  left: 30%;
 }
