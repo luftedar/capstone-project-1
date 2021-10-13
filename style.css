@@ -480,3 +480,47 @@ footer {
   width: 100vw;
   height: 50vh;
 }
+
+#desktop-menu {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  nav {
+    padding: 0;
+  }
+
+  #mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+  }
+
+  #desktop-menu {
+    display: unset;
+    justify-content: end;
+  }
+
+  #black-line {
+    background-color: #272a31;
+    padding: 0.2rem;
+  }
+
+  #black-line ul {
+    background-color: #272a31;
+    justify-content: end;
+  }
+
+  #black-line ul li {
+    list-style: none;
+    margin: 0.5rem;
+  }
+
+  #black-line ul li a {
+    color: #f9f9f9;
+    background-color: #272a31;
+    text-decoration: none;
+  }
+}
