@@ -28,6 +28,18 @@ nav {
   text-align: center;
 }
 
+#contact {
+  margin-top: 2rem;
+  color: #272a31;
+  font-size: 1rem;
+}
+
+#contact a {
+  color: #272a31;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
 #mobile-nav {
   position: fixed;
   transition: transform 1s ease-in-out;
