@@ -41,7 +41,8 @@ nav {
 }
 
 .past-box img {
-  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
   height: 250px;
   top: 0;
   position: absolute;
@@ -215,6 +216,11 @@ header h3 {
 
 #main-program {
   background-color: #272a31;
+}
+
+footer h2 {
+  color: #d3d3d3;
+  font-weight: 800;
 }
 
 #main-program h2 {
