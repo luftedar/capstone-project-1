@@ -471,3 +471,12 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.coming-soon-page {
+  color: #ec5242;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  width: 100vw;
+  height: 50vh;
+}
