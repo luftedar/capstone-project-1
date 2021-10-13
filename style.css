@@ -152,9 +152,11 @@ header::before {
   z-index: -1;
   height: 98vh;
   opacity: 0.3;
+  box-sizing: border-box;
 }
 
 hgroup h1 {
+  box-sizing: border-box;
   background-image: url('img/MobileMenuBG.jpg');
   font-weight: 900;
   background-size: cover;
