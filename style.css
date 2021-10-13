@@ -499,8 +499,8 @@ footer {
   }
 
   #desktop-menu {
-    display: unset;
-    justify-content: end;
+    display: initial;
+    width: 50%;
   }
 
   #black-line {
@@ -518,9 +518,47 @@ footer {
     margin: 0.5rem;
   }
 
+  .normal-elements a {
+    text-decoration: none;
+    color: #272a31;
+    margin-right: 4rem;
+  }
+
+  #white-line a {
+    width: 10%;
+  }
+
   #black-line ul li a {
     color: #f9f9f9;
     background-color: #272a31;
     text-decoration: none;
+  }
+
+  #home-logo {
+    width: 100%;
+  }
+
+  #white-line {
+    padding: 1rem;
+    background-color: #f9f9f9;
+    justify-content: space-between;
+  }
+
+  #white-line ul li {
+    list-style: none;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
+  #campaign-logo {
+    text-decoration: none;
+    color: #ec5242;
+    border: #ec5242 2px solid;
+    padding: 1rem;
+  }
+
+  .wma-90 {
+    width: 90%;
+    margin: 0 auto;
   }
 }
