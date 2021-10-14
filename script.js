@@ -108,3 +108,22 @@ for (let i = 0; i < speakerArray.length; i += 1) {
     speakerDescription[i].textContent = speakerArray[i].description;
   });
 }
+
+function linkStyler(x){
+  x.style.color = '#ec5242';
+  x.style.fontWeight = '800';
+  x.style.pointerEvents = 'none';
+  x.style.cursor = 'default';
+}
+
+const mobileNavLinkArray = [...document.querySelectorAll('#mobile-nav li a')];
+const mobileHome = mobileNavLinkArray[0];
+
+function linkStyler(x){
+  x.style.color = '#ec5242';
+  x.style.fontWeight = '800';
+  x.style.pointerEvents = 'none';
+  x.style.cursor = 'default';
+}
+
+linkStyler(mobileHome);

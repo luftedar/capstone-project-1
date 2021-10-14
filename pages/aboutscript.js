@@ -30,3 +30,44 @@ mobileMenuLink.forEach((menuItem) => {
 mobileMenuButton.addEventListener('click', toggleMenu);
 
 mobileMenuButton.addEventListener('click', hamburgerAnimation);
+
+const desktopNavLinkArray = [...document.querySelectorAll('.normal-elements a')]
+const desktopAbout = desktopNavLinkArray[0];
+const desktopProgram = desktopNavLinkArray[1];
+const desktopJoin = desktopNavLinkArray[2];
+const desktopSponsor = desktopNavLinkArray[3];
+const desktopNews = desktopNavLinkArray[4];
+
+const mobileNavLinkArray = [...document.querySelectorAll('#mobile-nav li a')];
+const mobileAbout = mobileNavLinkArray[1];
+const mobileProgram = mobileNavLinkArray[2];
+const mobileJoin = mobileNavLinkArray[3];
+const mobileSponsor = mobileNavLinkArray[4];
+const mobileNews = mobileNavLinkArray[5];
+const urlChecker = window.location.href.split("").splice(52,5).join("");
+
+function linkStyler(x){
+  x.style.color = '#ec5242';
+  x.style.fontWeight = '800';
+  x.style.pointerEvents = 'none';
+  x.style.cursor = 'default';
+}
+
+if(urlChecker==='about'){
+  linkStyler(desktopAbout);
+  linkStyler(mobileAbout);
+}
+
+if(urlChecker==='join.'){
+  linkStyler(desktopJoin);
+  linkStyler(mobileJoin);
+}
+
+if(urlChecker==='news.'){
+  linkStyler(desktopNews);
+  linkStyler(mobileNews);
+}
+
+if(urlChecker==='index'){
+  linkStyler(mobileHome);
+}
