@@ -394,9 +394,6 @@ footer .underline {
 
 footer {
   margin-top: 2rem;
-  background: #272a31;
-  padding: 2rem;
-  transition: transform 1s ease-out;
 }
 
 #img-div {
@@ -409,6 +406,12 @@ footer {
   background: #272a31;
   flex-basis: 50%;
   margin: 1.5rem;
+}
+
+#footer-logo img {
+  width: 40%;
+  max-width: 45%;
+  min-width: 40%;
 }
 
 #img-div img:nth-child(7) {
@@ -507,6 +510,24 @@ footer {
   color: #f9f9f9;
   background-color: #272a31;
   transition: 1s ease-out;
+}
+
+#footer-logo {
+  margin-top: 4rem;
+  justify-content: space-between;
+  padding: 3rem;
+  box-sizing: content-box;
+  align-items: center;
+}
+
+#footer-logo p {
+  font-size: 0.9rem;
+  color: #272a31;
+}
+
+#parterns {
+  background-color: #272a31;
+  padding: 3rem 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -655,8 +676,7 @@ footer {
   }
 
   #parterns {
-    width: 90%;
-    margin: auto;
+    background: #272a31;
   }
 
   .past-box img {
@@ -665,6 +685,10 @@ footer {
 
   #logo-section img {
     width: 25%;
+  }
+
+  #footer-logo img {
+    width: 1%;
   }
 
   #img-div img:nth-child(7) {
@@ -693,5 +717,9 @@ footer {
   .card-program:hover {
     border: 3px #f9f9f9 solid;
     transition: 1s ease-out;
+  }
+
+  #footer-logo {
+    margin: 0 auto;
   }
 }
