@@ -3,6 +3,11 @@
   font-family: 'Lato', sans-serif;
 }
 
+.container {
+  width: 85%;
+  margin: auto;
+}
+
 .d-none {
   display: none;
 }
@@ -534,13 +539,12 @@ footer {
     text-decoration: none;
   }
 
-  #home-logo {
-    width: 100%;
+  #white-line {
+    background-color: #f9f9f9;
   }
 
-  #white-line {
+  #white-line .container {
     padding: 1rem;
-    background-color: #f9f9f9;
     justify-content: space-between;
   }
 
