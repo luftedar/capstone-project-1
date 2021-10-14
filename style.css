@@ -531,7 +531,7 @@ footer {
   .normal-elements a {
     text-decoration: none;
     color: #272a31;
-    margin-right: 4rem;
+    margin-right: 2rem;
   }
 
   #white-line a {
@@ -560,10 +560,11 @@ footer {
   }
 
   #campaign-logo {
+    letter-spacing: 0.1px;
     text-decoration: none;
     color: #ec5242;
-    border: #ec5242 2px solid;
-    padding: 1rem;
+    border: #ec5242 1px solid;
+    padding: 0.5rem;
   }
 
   .wma-90 {
@@ -644,7 +645,24 @@ footer {
     margin: auto;
   }
 
+  .past-box img {
+    height: 400px;
+  }
+
+  #logo-section img {
+    width: 50%;
+  }
+
   #img-div img:nth-child(7) {
     margin: 0;
+  }
+
+  .m-auto {
+    margin: 0 auto;
+  }
+
+  .past-box {
+    width: 50%;
+    height: 400px;
   }
 }
