@@ -102,6 +102,7 @@ for (let i = 0; i < speakerArray.length; i += 1) {
     const speakerDescription = document.getElementsByClassName('speaker-description');
 
     speakerImage[i].src = speakerArray[i].image;
+    speakerImage[i].alt = speakerArray[i].name
     speakerName[i].textContent = speakerArray[i].name;
     speakerResume[i].textContent = speakerArray[i].resume;
     speakerDescription[i].textContent = speakerArray[i].description;
