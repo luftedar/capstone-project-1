@@ -249,6 +249,7 @@ footer h2 {
   padding: 2rem;
   margin: 0.3rem 1.5rem;
   position: relative;
+  box-sizing: border-box;
 }
 
 .card-program::before {
@@ -495,6 +496,19 @@ footer {
   display: none;
 }
 
+#join-button:hover {
+  color: #ec5242;
+  background-color: #f9f9f9;
+  transition: 1s ease-out;
+}
+
+#see-more:hover {
+  cursor: context-menu;
+  color: #f9f9f9;
+  background-color: #272a31;
+  transition: 1s ease-out;
+}
+
 @media (min-width: 768px) {
   nav {
     padding: 0;
@@ -668,5 +682,16 @@ footer {
 
   .card-speaker div {
     width: 200px;
+  }
+
+  #campaign-logo:hover {
+    background-color: #ec5242;
+    color: #f9f9f9;
+    transition: 1s;
+  }
+
+  .card-program:hover {
+    border: 3px #f9f9f9 solid;
+    transition: 1s ease-out;
   }
 }
