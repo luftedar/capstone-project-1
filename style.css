@@ -292,16 +292,17 @@ footer h2 {
   flex-shrink: 4;
 }
 
-#featured-speakers h2 {
+#featured-section h2 {
   margin: 2rem 0 0.5rem 0;
   font-weight: 700;
+  text-align: center;
 }
 
 footer .underline {
   margin: 1rem auto;
 }
 
-#featured-speakers .underline {
+#featured-section .underline {
   margin-bottom: 2.5rem;
 }
 
@@ -611,5 +612,23 @@ footer {
 
   .card-program h4 {
     margin: 1.5rem 0;
+  }
+
+  #see-more {
+    display: none;
+  }
+
+  .card-speaker {
+    margin-right: 0;
+  }
+
+  .card-speaker:nth-child(n+3) {
+    transition: none;
+    position: inherit;
+    transform: translateX(0);
+  }
+
+  #featured-speakers {
+    grid-template-columns: 1fr 1fr;
   }
 }
