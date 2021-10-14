@@ -531,6 +531,10 @@ footer {
 }
 
 @media (min-width: 768px) {
+  header::before {
+    height: 1050px;
+  }
+
   nav {
     padding: 0;
   }
