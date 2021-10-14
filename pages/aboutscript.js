@@ -45,6 +45,7 @@ const mobileJoin = mobileNavLinkArray[3];
 const mobileSponsor = mobileNavLinkArray[4];
 const mobileNews = mobileNavLinkArray[5];
 const urlChecker = window.location.href.split("").splice(52,5).join("");
+const urlChecker2 = window.location.href.split("").splice(28,5).join("");
 
 function linkStyler(x){
   x.style.color = '#ec5242';
@@ -53,21 +54,17 @@ function linkStyler(x){
   x.style.cursor = 'default';
 }
 
-if(urlChecker==='about'){
+if(urlChecker==='about' || urlChecker2==='about'){
   linkStyler(desktopAbout);
   linkStyler(mobileAbout);
 }
 
-if(urlChecker==='join.'){
+if(urlChecker==='join.' || urlChecker2==='join.'){
   linkStyler(desktopJoin);
   linkStyler(mobileJoin);
 }
 
-if(urlChecker==='news.'){
+if(urlChecker==='news.' || urlChecker2==='news.'){
   linkStyler(desktopNews);
   linkStyler(mobileNews);
-}
-
-if(urlChecker==='index'){
-  linkStyler(mobileHome);
 }
