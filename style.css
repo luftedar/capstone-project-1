@@ -490,6 +490,10 @@ footer {
   display: none;
 }
 
+#see-whole {
+  display: none;
+}
+
 @media (min-width: 768px) {
   nav {
     padding: 0;
@@ -564,5 +568,48 @@ footer {
   .wma-90 {
     width: 90%;
     margin: 0 auto;
+  }
+
+  header hgroup {
+    width: 90%;
+    margin: auto;
+  }
+
+  header hgroup h4 {
+    font-size: 3rem;
+  }
+
+  header hgroup h1 {
+    font-size: 5rem;
+  }
+
+  header hgroup h5 {
+    width: 50%;
+  }
+
+  #program-cards {
+    flex-direction: row;
+  }
+
+  .card-program {
+    flex-direction: column;
+    width: 150px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  #join-button {
+    display: none;
+  }
+
+  #see-whole {
+    margin: 5rem 0;
+    display: initial;
+    color: #f9f9f9;
+  }
+
+  .card-program h4 {
+    margin: 1.5rem 0;
   }
 }
