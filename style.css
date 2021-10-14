@@ -665,4 +665,8 @@ footer {
     width: 50%;
     height: 400px;
   }
+
+  .card-speaker div {
+    width: 200px;
+  }
 }
