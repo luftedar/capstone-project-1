@@ -18,7 +18,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-You can find [Live Demo Link](https://luftedar.github.io/capstone-project-1/). You can find [loom](https://www.loom.com/share/69421f26f2b34794b81b8c0e83cdc68c)
+You can find [Live Demo Link](https://luftedar.github.io/capstone-project-1/). You can checkt [loom](https://www.loom.com/share/69421f26f2b34794b81b8c0e83cdc68c) for description.
 
 
 ## Getting Started
