@@ -3,7 +3,7 @@ const mobileMenu = document.querySelector('#mobile-nav');
 const mobileLeft = document.querySelector('#mobile-menu-left');
 const mobileMenuLink = document.querySelectorAll('#mobile-nav li a');
 let menuOpen = false;
-function toggleMenu() {
+const toggleMenu = () => {
   if (mobileMenu.classList.contains('show-menu')) {
     mobileMenu.classList.remove('show-menu');
     mobileLeft.classList.remove('show-menu2');
@@ -11,9 +11,9 @@ function toggleMenu() {
     mobileMenu.classList.add('show-menu');
     mobileLeft.classList.add('show-menu2');
   }
-}
+};
 
-function hamburgerAnimation() {
+const hamburgerAnimation = () => {
   if (!menuOpen) {
     mobileMenuButton.classList.add('open');
     menuOpen = true;
@@ -21,7 +21,7 @@ function hamburgerAnimation() {
     mobileMenuButton.classList.remove('open');
     menuOpen = false;
   }
-}
+};
 
 mobileMenuLink.forEach((menuItem) => {
   menuItem.addEventListener('click', toggleMenu);
@@ -42,17 +42,16 @@ const mobileJoin = mobileNavLinkArray[3];
 const mobileNews = mobileNavLinkArray[5];
 const urlChecker = window.location.href.split('').splice(52, 5).join('');
 const urlChecker2 = window.location.href.split('').splice(28, 5).join('');
-const urlChecker3 = window.location.href.split('').splice(window.location.href.length-10, 5).join("");
-console.log(urlChecker3);
+const urlChecker3 = window.location.href.split('').splice(window.location.href.length - 10, 5).join('');
 
-function linkStyler(x) {
+const linkStyler = (x) => {
   x.style.color = '#ec5242';
   x.style.fontWeight = '800';
   x.style.pointerEvents = 'none';
   x.style.cursor = 'default';
-}
+};
 
-if (urlChecker === 'about' || urlChecker2 === 'about' || urlChecker3 === 'about' ) {
+if (urlChecker === 'about' || urlChecker2 === 'about' || urlChecker3 === 'about') {
   linkStyler(desktopAbout);
   linkStyler(mobileAbout);
 }

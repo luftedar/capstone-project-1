@@ -3,7 +3,7 @@ const mobileMenu = document.querySelector('#mobile-nav');
 const mobileLeft = document.querySelector('#mobile-menu-left');
 const mobileMenuLink = document.querySelectorAll('#mobile-nav li a');
 let menuOpen = false;
-function toggleMenu() {
+const toggleMenu = () => {
   if (mobileMenu.classList.contains('show-menu')) {
     mobileMenu.classList.remove('show-menu');
     mobileLeft.classList.remove('show-menu2');
@@ -11,9 +11,9 @@ function toggleMenu() {
     mobileMenu.classList.add('show-menu');
     mobileLeft.classList.add('show-menu2');
   }
-}
+};
 
-function hamburgerAnimation() {
+const hamburgerAnimation = () => {
   if (!menuOpen) {
     mobileMenuButton.classList.add('open');
     menuOpen = true;
@@ -21,14 +21,13 @@ function hamburgerAnimation() {
     mobileMenuButton.classList.remove('open');
     menuOpen = false;
   }
-}
+};
 
 mobileMenuLink.forEach((menuItem) => {
   menuItem.addEventListener('click', toggleMenu);
   menuItem.addEventListener('click', hamburgerAnimation);
 });
 mobileMenuButton.addEventListener('click', toggleMenu);
-
 mobileMenuButton.addEventListener('click', hamburgerAnimation);
 
 const speakerArray = [
@@ -107,12 +106,12 @@ for (let i = 0; i < speakerArray.length; i += 1) {
   });
 }
 
-function linkStyler(x) {
+const linkStyler = (x) => {
   x.style.color = '#ec5242';
   x.style.fontWeight = '800';
   x.style.pointerEvents = 'none';
   x.style.cursor = 'default';
-}
+};
 
 const mobileNavLinkArray = [...document.querySelectorAll('#mobile-nav li a')];
 const mobileHome = mobileNavLinkArray[0];
