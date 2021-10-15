@@ -60,9 +60,10 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- [Cindy Shin](https://www.behance.net/adagio07) whose design template was used to create this project.
+- Thanks to my teammates, learning, coding partners, code reviewers.
+- This project is part of Capstone week of module 1 in the Microverse study program.
+- Thanks to the Microverse team for the great curriculum.
 
 ## 📝 License
 
