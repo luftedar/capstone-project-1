@@ -75,7 +75,7 @@ const moreSpeakers = cardSpeakers.splice(2, cardSpeakers.length);
 
 seeMoreButton.addEventListener('click', () => {
   for (let i = 0; i < moreSpeakers.length; i += 1) {
-    if (moreSpeakers[i].classList[moreSpeakers.length] === 'hide-menu2') {
+    if (moreSpeakers[i].classList[moreSpeakers.length-1] === 'hide-menu2') {
       moreSpeakers[i].classList.remove('p-fixed');
       moreSpeakers[i].classList.remove('hide-menu2');
       moreSpeakers[i].classList.add('show-menu2');
