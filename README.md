@@ -1,10 +1,11 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Antalya Drummers Summit - Module 1 Capstone Project.
 
 > This is the Microverse's module 1 capstone project. This project made based on [Cindy Shin's Creative Common Global Summit 2015 Design](https://www.behance.net/adagio07).
 
-![screenshot](./app_screenshot.png)
+![screenshot1](./app_screenshot.png)
+![screenshot2](./app_screenshot2.png)
 
 Additional description about the project and its features.
 
@@ -22,8 +23,17 @@ You can find [Live Demo Link](https://luftedar.github.io/capstone-project-1/). Y
 
 ## Getting Started
 
-
 To get a local copy up and running follow these simple example steps.
+
+Clone the project by:
+
+git clone git@github.com:luftedar/capstone-project-1.git
+
+cd into the project folder by:
+
+cd capstone-project-1
+
+Open folder with code editor
 
 ### Prerequisites
 
