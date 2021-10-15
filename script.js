@@ -73,23 +73,21 @@ const speakerArray = [
 const seeMoreButton = document.querySelector('#see-more');
 const cardSpeakers = [...document.querySelectorAll('.card-speaker')];
 const moreSpeakers = cardSpeakers.splice(2, cardSpeakers.length);
-const footer = document.querySelector('footer');
-const arrow = document.querySelector('#see-more span')
 
 seeMoreButton.addEventListener('click', () => {
   for (let i = 0; i < moreSpeakers.length; i += 1) {
     if (moreSpeakers[i].classList[moreSpeakers.length] === 'hide-menu2') {
-      moreSpeakers[i].classList.remove('p-fixed')
+      moreSpeakers[i].classList.remove('p-fixed');
       moreSpeakers[i].classList.remove('hide-menu2');
       moreSpeakers[i].classList.add('show-menu2');
       seeMoreButton.style.transform = 'translateY(0)';
-      seeMoreButton.innerHTML = 'LESS<span>&UpArrow;</span>'
+      seeMoreButton.innerHTML = 'LESS<span>&UpArrow;</span>';
     } else {
       moreSpeakers[i].classList.add('p-fixed');
       moreSpeakers[i].classList.add('hide-menu2');
       moreSpeakers[i].classList.remove('show-menu2');
       seeMoreButton.style.transform = 'translateY(-10%)';
-      seeMoreButton.innerHTML = 'MORE<span>&DownArrow;</span>'
+      seeMoreButton.innerHTML = 'MORE<span>&DownArrow;</span>';
     }
   }
 });
@@ -102,14 +100,14 @@ for (let i = 0; i < speakerArray.length; i += 1) {
     const speakerDescription = document.getElementsByClassName('speaker-description');
 
     speakerImage[i].src = speakerArray[i].image;
-    speakerImage[i].alt = speakerArray[i].name
+    speakerImage[i].alt = speakerArray[i].name;
     speakerName[i].textContent = speakerArray[i].name;
     speakerResume[i].textContent = speakerArray[i].resume;
     speakerDescription[i].textContent = speakerArray[i].description;
   });
 }
 
-function linkStyler(x){
+function linkStyler(x) {
   x.style.color = '#ec5242';
   x.style.fontWeight = '800';
   x.style.pointerEvents = 'none';
@@ -118,12 +116,4 @@ function linkStyler(x){
 
 const mobileNavLinkArray = [...document.querySelectorAll('#mobile-nav li a')];
 const mobileHome = mobileNavLinkArray[0];
-
-function linkStyler(x){
-  x.style.color = '#ec5242';
-  x.style.fontWeight = '800';
-  x.style.pointerEvents = 'none';
-  x.style.cursor = 'default';
-}
-
 linkStyler(mobileHome);
