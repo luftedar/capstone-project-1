@@ -46,7 +46,7 @@ Open folder with code editor
 
 - GitHub: [@githubhandle](https://github.com/luftedar)
 - Twitter: [@twitterhandle](https://twitter.com/OrcunUgur2)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/orçun-uğur-089148181/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/orcunugur)
 
 ## 🤝 Contributing
 
