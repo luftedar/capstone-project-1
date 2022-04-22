@@ -4,7 +4,7 @@
 
 > This is the Microverse's module 1 capstone project. This project made based on [Cindy Shin's Creative Common Global Summit 2015 Design](https://www.behance.net/adagio07).
 
-![screenshot1](./app_screenshot1.png)
+![screenshot1](./app_screenshot.png)
 ![screenshot2](./app_screenshot2.png)
 
 Additional description about the project and its features.
